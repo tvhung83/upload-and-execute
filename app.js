@@ -22,8 +22,8 @@ app.post('/', function(req, res) {
             return res.end("Error uploading file.");
         }
         res.end("File is uploaded");
-        // const pong = require('./uploads/' + filename);
-        // pong();
+        const pong = require('./uploads/' + filename);
+        pong();
         return true;
     });
 });
